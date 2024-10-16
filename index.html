@@ -1,10 +1,179 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Algonquin Therapeutics</title>
-  </head>
-  <body>
-    <h1>Welcome to Algonquin Therapeutics</h1>
-    <p>Understanding Disease, Transforming Health.</p>
-  </body>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Style -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+            background-color: #0a3d25; /* Dark green */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #093017; /* Darker green */
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #a9d7ac; /* Light green for contrast */
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        nav ul li a:hover {
+            color: #a9d7ac;
+        }
+
+        /* Main Section */
+        main {
+            flex-grow: 1;
+            padding: 40px 20px;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .hero h2 {
+            font-size: 2.2rem;
+            color: #a9d7ac;
+        }
+
+        .hero p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .feature-box {
+            background-color: #0f4d32; /* Slightly lighter green */
+            padding: 20px;
+            border-radius: 10px;
+            flex-basis: calc(33.333% - 20px);
+            text-align: center;
+        }
+
+        .feature-box h3 {
+            color: #a9d7ac;
+            margin-bottom: 15px;
+        }
+
+        .feature-box p {
+            font-size: 1rem;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #093017;
+            text-align: center;
+            padding: 20px;
+            color: #a9d7ac;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .feature-box {
+                flex-basis: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .feature-box {
+                flex-basis: 100%;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Algonquin Therapeutics</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero">
+            <h2>Innovative Solutions for Modern Medicine</h2>
+            <p>At Algonquin Therapeutics, we are committed to developing groundbreaking therapies that enhance patient outcomes and improve lives worldwide. Discover the power of innovation and science combined.</p>
+        </section>
+
+        <section class="features">
+            <div class="feature-box">
+                <h3>Personalized Medicine</h3>
+                <p>Tailored treatments based on genetic profiles to optimize therapy and improve patient outcomes.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Cutting-Edge Research</h3>
+                <p>Our team of researchers is on the forefront of discovering novel treatments for complex diseases.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Patient-Focused Care</h3>
+                <p>We place patients at the center of everything we do, ensuring personalized attention and care.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Algonquin Therapeutics. All rights reserved.</p>
+    </footer>
+
+</body>
 </html>
